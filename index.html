@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroShop DZ - Accueil</title>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <p>
+        🔥 Promotions spéciales sur les produits électroniques • Livraison
+        rapide en Algérie
+      </p>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo-box">
+          <div class="logo-icon">E</div>
+          <div class="logo-text">
+            <h1>ElectroShop DZ</h1>
+            <p>DZ • ALGÉRIE</p>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="content/products.html">Produits</a></li>
+
+          <a href="content/signup.html">Inscription</a>
+          <a href="content/login.html">Connexion</a>
+
+          <li><a href="content/cart.html">Panier</a></li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Accueil</a>
+        <a href="content/products.html">Produits</a>
+        <a href="content/signup.html">Inscription</a>
+        <a href="content/login.html">Connexion</a>
+        <a href="content/cart.html">Panier</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <span class="hero-badge">⚡ LIVRAISON EXPRESS EN ALGÉRIE</span>
+
+          <h2>L'ÉLECTRONIQUE DU FUTUR</h2>
+
+          <p>
+            Découvrez notre sélection premium de téléphones, ordinateurs,
+            écouteurs et montres connectées.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="content/products.html" class="btn btn-primary">
+              Voir les produits
+            </a>
+
+            <a href="content/signup.html" class="btn btn-secondary">
+              Créer un compte
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-box">
+              <h3>300+</h3>
+              <p>Produits disponibles</p>
+            </div>
+            <div class="stat-box">
+              <h3>48h</h3>
+              <p>Livraison rapide</p>
+            </div>
+            <div class="stat-box">
+              <h3>100%</h3>
+              <p>Paiement sécurisé</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories section hidden-section">
+        <div class="section-header">
+          <p class="section-label">CATÉGORIES</p>
+          <h2>Nos Univers</h2>
+          <p class="section-description">
+            Explorez nos différentes catégories et trouvez les meilleurs
+            produits électroniques adaptés à vos besoins.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <article
+            class="category-card hidden-left clickable-card"
+            data-link="content/products.html"
+          >
+            <img src="images/phone.png" alt="Téléphones" class="category-img" />
+            <div class="category-content">
+              <h3>Téléphones</h3>
+              <p class="category-desc">
+                Smartphones modernes, puissants et élégants pour tous les
+                besoins.
+              </p>
+              <p class="category-count">120 produits</p>
+            </div>
+          </article>
+
+          <article
+            class="category-card hidden-section clickable-card"
+            data-link="content/products.html"
+          >
+            <img
+              src="images/laptop.png"
+              alt="Ordinateurs"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Ordinateurs</h3>
+              <p class="category-desc">
+                Ordinateurs performants pour les études, le travail et le
+                divertissement.
+              </p>
+              <p class="category-count">85 produits</p>
+            </div>
+          </article>
+
+          <article
+            class="category-card hidden-section clickable-card"
+            data-link="content/products.html"
+          >
+            <img
+              src="images/headphones.png"
+              alt="Écouteurs"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Écouteurs</h3>
+              <p class="category-desc">
+                Écouteurs et casques avec une excellente qualité sonore et un
+                grand confort.
+              </p>
+              <p class="category-count">65 produits</p>
+            </div>
+          </article>
+
+          <article
+            class="category-card hidden-right clickable-card"
+            data-link="content/products.html"
+          >
+            <img
+              src="images/watch.png"
+              alt="Montres connectées"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Montres connectées</h3>
+              <p class="category-desc">
+                Montres intelligentes pour suivre votre activité et recevoir vos
+                notifications.
+              </p>
+              <p class="category-count">42 produits</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="advantages section hidden-section">
+        <div class="section-header center">
+          <p class="section-label">AVANTAGES</p>
+          <h2>Pourquoi choisir ElectroShop DZ ?</h2>
+        </div>
+
+        <div class="advantages-grid">
+          <article class="advantage-card hidden-left">
+            <h3>Produits variés</h3>
+            <p>Large sélection des meilleures marques internationales.</p>
+          </article>
+
+          <article class="advantage-card hidden-section">
+            <h3>Livraison rapide</h3>
+            <p>Commandes livrées rapidement partout en Algérie.</p>
+          </article>
+
+          <article class="advantage-card hidden-right">
+            <h3>Paiement sécurisé</h3>
+            <p>Transactions protégées et expérience d’achat fiable.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta section hidden-section">
+        <div class="cta-box">
+          <h2>Prêt à découvrir nos meilleures offres ?</h2>
+          <p>
+            Parcourez notre catalogue et trouvez les meilleurs appareils
+            électroniques.
+          </p>
+          <a href="content/products.html" class="btn btn-primary">
+            Explorer les produits
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2>ElectroShop DZ</h2>
+        <p>
+          Votre boutique en ligne de référence pour l'électronique en Algérie.
+        </p>
+
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="content/products.html">Produits</a>
+          <a href="content/signup.html">Inscription</a>
+          <a href="content/login.html">Connexion</a>
+        </div>
+
+        <p class="copyright">
+          © 2026 ElectroShop DZ — Tous droits réservés • Projet Universitaire
+        </p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

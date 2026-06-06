@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroShop DZ - Commande</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/commande.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo-box">
+          <div class="logo-icon">E</div>
+          <div class="logo-text">
+            <h1>ElectroShop DZ</h1>
+            <p>DZ • ALGÉRIE</p>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="signup.html">Inscription</a></li>
+          <li><a href="login.html">Connexion</a></li>
+          <li><a href="cart.html">Panier</a></li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="../index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="signup.html">Inscription</a>
+        <a href="login.html">Connexion</a>
+        <a href="cart.html">Panier</a>
+      </div>
+    </header>
+
+    <main class="commande-page">
+      <section class="commande-hero">
+        <p class="section-label">COMMANDE</p>
+        <h2>Finaliser votre commande</h2>
+        <p class="section-description">
+          Remplissez vos informations pour confirmer votre commande.
+        </p>
+      </section>
+
+      <section class="commande-layout">
+        <div class="commande-form-box">
+          <form id="commandeForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Nom complet</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Votre nom complet"
+              />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" placeholder="exemple@email.com" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="text" id="phone" placeholder="0550 00 00 00" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Adresse</label>
+              <input type="text" id="address" placeholder="Votre adresse" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="city">Ville</label>
+              <input type="text" id="city" placeholder="Votre ville" />
+              <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="payment">Mode de paiement</label>
+              <select id="payment">
+                <option value="">Choisir un mode</option>
+                <option value="livraison">Paiement à la livraison</option>
+                <option value="carte">Carte bancaire</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+
+            <button type="submit" class="confirm-btn">
+              Confirmer la commande
+            </button>
+          </form>
+        </div>
+
+        <aside class="commande-summary">
+          <h3>Résumé de la commande</h3>
+
+          <div id="orderItems" class="order-items"></div>
+
+          <div class="summary-row">
+            <span>Nombre d'articles</span>
+            <span id="itemsCount">0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Sous-total</span>
+            <span id="subtotalPrice">0 DA</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Livraison</span>
+            <span>Gratuite</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span id="totalPrice">0 DA</span>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2>ElectroShop DZ</h2>
+        <p>
+          Votre boutique en ligne de référence pour l’électronique en Algérie.
+        </p>
+        <p class="copyright">
+          © 2026 ElectroShop DZ — Tous droits réservés • Projet Universitaire
+        </p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast">
+      <div class="toast-content">
+        <span class="toast-icon">✔</span>
+        <span id="toastMessage">Commande confirmée avec succès !</span>
+      </div>
+    </div>
+
+    <script src="../javascript/commande.js"></script>
+  </body>
+</html>

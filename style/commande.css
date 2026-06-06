@@ -1,0 +1,208 @@
+.commande-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 80px;
+}
+
+.commande-hero {
+  margin-bottom: 35px;
+}
+
+.commande-hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.section-label {
+  color: #3b82f6;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: #94a3b8;
+  max-width: 700px;
+}
+
+.commande-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.commande-form-box,
+.commande-summary {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+#commandeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  background-color: #0b1120;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #ef4444;
+}
+
+.error-message {
+  min-height: 18px;
+  margin-top: 6px;
+  color: #f87171;
+  font-size: 0.85rem;
+}
+
+.confirm-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.commande-summary h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.order-item-name {
+  color: #e2e8f0;
+}
+
+.order-item-qty {
+  color: #60a5fa;
+  font-size: 0.9rem;
+}
+
+.order-item-price {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.summary-row,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-row {
+  padding: 12px 0;
+  color: #cbd5e1;
+  border-bottom: 1px solid #1f2937;
+}
+
+.summary-total {
+  padding: 18px 0 0;
+  margin-top: 8px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #111827;
+  border: 1px solid #2563eb;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 2000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toast-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .commande-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .commande-hero h2 {
+    font-size: 2.2rem;
+  }
+}

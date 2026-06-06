@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroShop DZ - Panier</title>
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo-box">
+          <div class="logo-icon">E</div>
+          <div class="logo-text">
+            <h1>ElectroShop DZ</h1>
+            <p>DZ • ALGÉRIE</p>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="signup.html">Inscription</a></li>
+          <li><a href="login.html">Connexion</a></li>
+          <li>
+            <a href="cart.html" class="cart-link">
+              Panier
+              <span id="cartCount" class="cart-count hidden">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="../index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="signup.html">Inscription</a>
+        <a href="login.html">Connexion</a>
+        <a href="cart.html" class="cart-link-mobile">
+          Panier
+          <span id="cartCountMobile" class="cart-count hidden">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="cart-page">
+      <section class="cart-hero">
+        <p class="section-label">PANIER</p>
+        <h2>Votre Panier</h2>
+        <p class="section-description">
+          Consultez vos produits sélectionnés, modifiez les quantités et
+          préparez votre commande.
+        </p>
+      </section>
+
+      <section class="cart-layout">
+        <div class="cart-left">
+          <div id="cartItemsContainer" class="cart-items"></div>
+        </div>
+
+        <aside class="cart-summary">
+          <h3>Résumé de la commande</h3>
+
+          <div class="summary-row">
+            <span>Nombre d'articles</span>
+            <span id="itemsCount">0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Sous-total</span>
+            <span id="subtotalPrice">0 DA</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Livraison</span>
+            <span>Gratuite</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span id="totalPrice">0 DA</span>
+          </div>
+
+          <!-- زر يذهب لصفحة commande -->
+          <a href="commande.html" class="checkout-btn"> Passer la commande </a>
+
+          <a href="products.html" class="continue-btn">
+            Continuer mes achats
+          </a>
+        </aside>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2>ElectroShop DZ</h2>
+        <p>
+          Votre boutique en ligne de référence pour l'électronique en Algérie.
+        </p>
+
+        <div class="footer-links">
+          <a href="../index.html">Accueil</a>
+          <a href="products.html">Produits</a>
+          <a href="signup.html">Inscription</a>
+          <a href="login.html">Connexion</a>
+        </div>
+
+        <p class="copyright">
+          © 2026 ElectroShop DZ — Tous droits réservés • Projet Universitaire
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="../javascript/cart.js"></script>
+  </body>
+</html>

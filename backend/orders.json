@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1780589639085,
+    "date": "04/06/2026 17:13:59",
+    "customer": {
+      "fullName": "lynaluna",
+      "email": "ninalyna@gmail.com",
+      "phone": "0512345678",
+      "address": "beni douala",
+      "city": "tizi ouzou",
+      "payment": "livraison"
+    },
+    "cart": [
+      {
+        "id": 3,
+        "name": "MacBook Air M2",
+        "category": "Ordinateurs",
+        "price": 235000,
+        "image": "../images/product-laptop-1.jpg",
+        "description": "Ordinateur portable léger, rapide et parfait pour les études.",
+        "quantity": 1
+      }
+    ],
+    "total": 235000
+  },
+  {
+    "id": 1780689189197,
+    "date": "05/06/2026 20:53:09",
+    "customer": {
+      "fullName": "lynaluna",
+      "email": "ninalyna@gmail.com",
+      "phone": "0512345678",
+      "address": "beni douala",
+      "city": "tizi ouzou",
+      "payment": "carte"
+    },
+    "cart": [
+      {
+        "id": 3,
+        "name": "MacBook Air M2",
+        "category": "Ordinateurs",
+        "price": 235000,
+        "image": "../images/product-laptop-1.jpg",
+        "description": "Ordinateur portable léger, rapide et parfait pour les études.",
+        "quantity": 1
+      }
+    ],
+    "total": 235000
+  },
+  {
+    "id": 1780751371560,
+    "date": "06/06/2026 14:09:31",
+    "customer": {
+      "fullName": "lynaluna",
+      "email": "ninalyna@gmail.com",
+      "phone": "0512345678",
+      "address": "beni douala",
+      "city": "tizi ouzou",
+      "payment": "livraison"
+    },
+    "cart": [
+      {
+        "id": 4,
+        "name": "HP Pavilion 15",
+        "category": "Ordinateurs",
+        "price": 165000,
+        "image": "../images/product-laptop-2.jpg",
+        "description": "PC portable élégant avec bonnes performances pour le travail.",
+        "quantity": 1
+      }
+    ],
+    "total": 165000
+  },
+  {
+    "id": 1780760031011,
+    "date": "06/06/2026 16:33:51",
+    "customer": {
+      "fullName": "lynaluna",
+      "email": "ninalyna@gmail.com",
+      "phone": "0512345678",
+      "address": "beni douala",
+      "city": "tizi ouzou",
+      "payment": "livraison"
+    },
+    "cart": [
+      {
+        "id": 4,
+        "name": "HP Pavilion 15",
+        "category": "Ordinateurs",
+        "price": 165000,
+        "image": "../images/product-laptop-2.jpg",
+        "description": "PC portable élégant avec bonnes performances pour le travail.",
+        "quantity": 1
+      }
+    ],
+    "total": 165000
+  },
+  {
+    "id": 1780760031038,
+    "date": "06/06/2026 16:33:51",
+    "customer": {
+      "fullName": "lynaluna",
+      "email": "ninalyna@gmail.com",
+      "phone": "0512345678",
+      "address": "beni douala",
+      "city": "tizi ouzou",
+      "payment": "livraison"
+    },
+    "cart": [
+      {
+        "id": 4,
+        "name": "HP Pavilion 15",
+        "category": "Ordinateurs",
+        "price": 165000,
+        "image": "../images/product-laptop-2.jpg",
+        "description": "PC portable élégant avec bonnes performances pour le travail.",
+        "quantity": 1
+      }
+    ],
+    "total": 165000
+  }
+]
